@@ -3,23 +3,20 @@ package Main;
 public class Calculadora implements ICalculadora {
 
 	@Override
-	public Double soma(Double n1, Double n2) {		
-		return n1 + n2;
+	public Double somar(String n1, String n2) {
+		return Double.valueOf(n1) + Double.valueOf(n1);
 	}
 
 	@Override
-	public Double subtrai(Double n1, Double n2) {
-		return n1-n2;
+	public Double dividir(String n1, String n2) {
+		return Double.valueOf(n1) / Double.valueOf(n1);
 	}
 
 	@Override
-	public Double divide(Double n1, Double n2) {
-		return n1/n2;
+	public Double raizQuadrada(String n1) {
+		return Double.valueOf(n1) * Double.valueOf(n1) ;
 	}
 
-	@Override
-	public Double multiplica(Double n1, Double n2) {
-		return n1*n2;
-	}
+
 
 }
